@@ -3,6 +3,10 @@ public class sumOfNode {
         if(root == null) return 0;
         return root.val+ sum(root.left) +sum(root.right);
     }
+    static int pro(Node root){
+        if(root == null) return 1;
+        return root.val*pro(root.left) *pro(root.right);
+    }
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(4);
@@ -14,5 +18,6 @@ public class sumOfNode {
         b.left = d; b.right = e;
         c.right = f;
         System.out.println(sum(a));
+        System.out.println(pro(a));
     }
 }

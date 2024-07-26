@@ -11,6 +11,10 @@ public class Tree{
         display(root.left);
         display(root.right);
     }
+    static int size(Node root){
+        if(root ==null) return 0;
+        return 1+size(root.left)+size(root.right);
+    }
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(4);
@@ -22,5 +26,7 @@ public class Tree{
         b.left = d; b.right = e;
         c.right = f;
         display(a);
+        System.out.println();
+        System.out.println(size(a));
     }
 }
