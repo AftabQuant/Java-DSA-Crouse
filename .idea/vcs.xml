@@ -4,5 +4,6 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Graph" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Queue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tree DS" vcs="Git" />
   </component>
 </project>
