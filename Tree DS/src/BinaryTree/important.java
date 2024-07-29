@@ -21,6 +21,5 @@ public class important{
         c.right = f;
         System.out.println(size(a));
         System.out.println(level(a));
-        System.out.println(height(a));
     }
 }
