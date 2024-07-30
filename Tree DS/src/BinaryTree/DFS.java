@@ -41,6 +41,5 @@ public class DFS{
         c.left =f;c.right=g;
         d.left=h;d.right=i;
         levelTraversal(a);
-        rightToLeft(a);
     }
 }
