@@ -1,6 +1,14 @@
-import java.util.Stack;
+import java.util.*;
 
 public class Temporary1{
+    static class Pair{
+        Node node;
+        int level;
+        Pair(Node node, int level){
+            this.node = node;
+            this.level=level;
+        }
+    }
     static void preorder(Node root){
         if(root==null) return;
         System.out.print(root.val+" ");
@@ -39,6 +47,44 @@ public class Temporary1{
         if(root==null) return Integer.MAX_VALUE;
         return Math.min(root.val,Math.min(min(root.left),min(root.right)));
     }
+    static void bfs(Node root){
+        Queue<Node> que = new ArrayDeque<>();
+        List<Integer> ans = new ArrayList<>();
+        if(root!=null) que.add(root);
+        while(!que.isEmpty()){
+            Node temp = que.poll();
+            ans.add(temp.val);
+            if(temp.left!=null) que.add(temp.left);
+            if(temp.right!=null)que.add(temp.right);
+        }
+        System.out.println(ans);
+    }
+    static void nthLevel(Node root, int level, int n){
+        if(root==null) return;
+        if(level==n) System.out.print(root.val+" ");
+        nthLevel(root.left,level+1,n);
+        nthLevel(root.right,level+1,n);
+    }
+    static void allnthLevel(Node root, int level, int n){
+        if(root==null) return;
+        if(level==n) System.out.print(root.val+" ");
+        allnthLevel(root.left,level+1,n);
+        allnthLevel(root.right,level+1,n);
+    }
+    static void levelOrder(Node root){
+        Queue<Pair> que = new ArrayDeque<>();
+        List<Integer> arr = new ArrayList<>();
+        if(root!=null) que.add(new Pair(root,0));
+        while(!que.isEmpty()){
+            Pair front = que.poll();
+            Node temp = front.node;
+            int leve = front.level;
+            arr.add(temp.val);
+            if(temp.left!=null) que.add(new Pair(temp.left,leve+1));
+            if(temp.right!=null) que.add(new Pair(temp.right,leve+1));
+        }
+        System.out.println(arr);
+    }
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(2);
@@ -58,10 +104,7 @@ public class Temporary1{
         System.out.println();
         postorder(a);
         System.out.println();
-        System.out.println(size(a));
-        System.out.println(level(a));
-        System.out.println(sum(a));
-        System.out.println(max(a));
-        System.out.println(min(a));
+        bfs(a);
+        levelOrder(a);
     }
 }
