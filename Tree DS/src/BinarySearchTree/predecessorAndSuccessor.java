@@ -1,4 +1,4 @@
-package BinarySearchTree.Node;
+package BinarySearchTree;
 import java.util.*;
 public class predecessorAndSuccessor{
     private static void inorder(Node root, List<Integer> arr ){

@@ -1,4 +1,4 @@
-package BinarySearchTree.Node;
+package BinarySearchTree;
 
 public class reverseBST{
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package BinarySearchTree.Node;
+package BinarySearchTree;
 
 public class Main{
     static void display(Node root){
