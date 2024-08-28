@@ -1,5 +1,6 @@
 package Heap;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class BasicCF{
@@ -19,6 +20,8 @@ public class BasicCF{
         // Remove Element
         pq.remove();
         System.out.println(pq+" Top Element Is"+ pq.peek());
+        // MaxHeap
+        PriorityQueue<Integer> mpq = new PriorityQueue<>(Collections.reverseOrder());
     }
 
 }
