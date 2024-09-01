@@ -1,7 +1,7 @@
-package Heap;
+package LeetCode;
 import java.util.*;
 
-public class KclosestElements{
+public class KClosestElements{
     static class Pair  implements Comparable<Pair>{
         int num;
         int diff;
@@ -22,7 +22,7 @@ public class KclosestElements{
             if (pq.size() > k) pq.remove();
         }
         List<Integer> ans = new ArrayList<>();
-        while(pq.size()>0){
+        while(!pq.isEmpty()){
             Pair ele = pq.remove();
             ans.add(ele.num);
         }

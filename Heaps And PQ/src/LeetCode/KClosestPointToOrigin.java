@@ -1,5 +1,8 @@
-package Heap;
-import java.util.*;
+package LeetCode;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.PriorityQueue;
 
 class Pair{
     int x; int y;

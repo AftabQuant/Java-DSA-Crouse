@@ -1,5 +1,8 @@
-package Heap;
-import java.util.*;
+package LeetCode;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.PriorityQueue;
 
 public class SortedArray{
     public static int[] frequencySort(int[] nums) {

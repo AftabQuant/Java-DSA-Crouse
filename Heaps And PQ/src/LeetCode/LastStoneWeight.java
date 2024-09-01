@@ -1,5 +1,9 @@
-package Heap;
-import java.util.*;
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.PriorityQueue;
 
 public class LastStoneWeight{
     public static int lastStoneWeightUsingAL(int[] stones) {

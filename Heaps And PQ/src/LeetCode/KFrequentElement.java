@@ -1,5 +1,7 @@
-package Heap;
-import java.util.*;
+package LeetCode;
+
+import java.util.HashMap;
+import java.util.PriorityQueue;
 
 class Pairs implements Comparable<Pairs>{
     int key;
