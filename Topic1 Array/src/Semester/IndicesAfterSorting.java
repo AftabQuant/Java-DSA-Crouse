@@ -1,8 +1,5 @@
 package Semester;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class IndicesAfterSorting{
     public static List<Integer> targetIndices(int[] nums, int target) {
