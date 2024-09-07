@@ -1,4 +1,4 @@
-package PracticeProblems;
+package LeetCode;
 import java.util.*;
 
 public class NaryTraversal{

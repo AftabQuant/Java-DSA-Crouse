@@ -1,4 +1,4 @@
-package PracticeProblems;
+package LeetCode;
 public class Node{
     int val;
     Node left;
