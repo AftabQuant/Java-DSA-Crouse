@@ -12,10 +12,10 @@ public class DisplayUsingArray {
         st.push(5);
         System.out.println(st);
         Stack<Integer> gt = new Stack<>();
-        while(st.size()>0){
+        while(!st.isEmpty()){
             gt.push(st.pop());
         }
-        while(gt.size()>0){
+        while(!gt.isEmpty()){
             int x = gt.pop();
             System.out.print(x+"\t");
             st.push(x);
