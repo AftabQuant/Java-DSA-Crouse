@@ -1,6 +1,8 @@
 public class SentenceSimilarity{
     public boolean areSentencesSimilar(String sentence1, String sentence2) {
-        if(sentence1.length() > sentence2. length()) return areSentencesSimilar(sentence2, sentence1);
+        if(sentence1.length() > sentence2. length()) {
+            return areSentencesSimilar(sentence2, sentence1);
+        }
         String[] arr = sentence1.split(" ");
         String[] brr = sentence2.split(" ");
         int st = 0, end1 = arr.length-1, end2 = brr.length -1;
