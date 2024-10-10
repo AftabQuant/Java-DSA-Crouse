@@ -11,7 +11,7 @@ public class MinAddToValid{
                 if(!st.isEmpty() && st.peek()=='('){
                     st.pop();
                 }
-                else st.push(top)
+                else st.push(top);
             }
         }
         return st.size();
