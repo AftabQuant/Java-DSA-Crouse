@@ -1,5 +1,5 @@
 public class NumberOfSubArray{
-    public static int numOfSubarrays(int[] arr, int k, int threshold) {
+    public static int numOfSubarrays(int[] arr, int k, int threshold){
         int i=0, j=k-1, sum = 0;   int ans = 0;
         for(int a=0; a<k; a++){
             sum += arr[a];
